@@ -1,0 +1,195 @@
+/* General Page Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+h1 {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Add User Button */
+.add-user-button {
+  background: green;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.add-user-button:hover {
+  background: darkgreen;
+}
+
+/* User Card */
+.user-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-bottom: 15px;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* User Name */
+.user-card h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #222;
+}
+
+/* User Details */
+.user-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Edit Button */
+.edit-button {
+  background: blue;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease-in-out;
+}
+
+.edit-button:hover {
+  background: darkblue;
+}
+
+/* Delete Button */
+.delete-button {
+  background: red;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease-in-out;
+}
+
+.delete-button:hover {
+  background: darkred;
+}
+
+/* ====== USER FORM STYLES ====== */
+.user-form-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.user-form-container h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #333;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-form label {
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.user-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.user-form input:focus {
+  border-color: #3498db;
+}
+
+/* Form Buttons */
+.user-form button {
+  background: #3498db;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+.user-form button:hover {
+  background: #217dbb;
+}
+
+/* Cancel Button */
+.cancel-button {
+  background: gray;
+}
+
+.cancel-button:hover {
+  background: darkgray;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.spinner {
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
